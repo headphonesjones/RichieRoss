@@ -362,7 +362,12 @@ div.logo {
 
 */
 body {
-  background-color: #e2e1db; }
+  background-color: #e2e1db;
+  font-family: "freight-sans-pro",sans-serif; }
+
+.bold {
+  font-family: "freight-sans-pro",sans-serif;
+  font-weight: 700; }
 
 .hero {
   width: 100%;
@@ -394,8 +399,9 @@ body {
         background-image: url("../images/logo@2x.png");
         background-size: 100% 100%; } }
   .hero .heroBlotch {
-    width: 50%;
+    width: 750px;
     height: 100%;
+    max-height: 1000px;
     background: url("../images/large-blotch-half.png") no-repeat;
     position: absolute;
     background-size: contain;
@@ -418,10 +424,38 @@ body {
 
 .darkBlotch {
   width: 100%;
-  height: 1000px;
+  height: 2000px;
   background-color: #000000;
   position: relative;
+  top: -25px;
   z-index: 9; }
   .darkBlotch .darkTopBlotch {
+    background: url("../images/black-edge-top.png") repeat-x;
+    width: 100%;
+    height: 50px;
     position: relative;
     top: -50px; }
+  .darkBlotch .container {
+    margin-top: 250px; }
+
+.imageHeadline {
+  width: 250px;
+  height: auto; }
+
+.smallLogo {
+  width: 100px;
+  height: auto;
+  margin-top: 50px; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #bbbab7;
+  margin: 1em 0;
+  padding: 0; }
+
+/* TYPOGRAPHY */
+p {
+  color: #bbbab7;
+  font-size: 20px; }
