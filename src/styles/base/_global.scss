@@ -1,0 +1,80 @@
+// Global CSS goes here
+
+/* USAGE
+
+div.logo {
+   background: url("logo.png") no-repeat;
+   @include image-2x("logo2x.png", 100px, 25px);
+ }
+
+*/
+
+body{
+  background-color: $lightGray;
+}
+
+.hero{
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+
+  .heroImage{
+    background: url("/dist/images/Richie.png") no-repeat;
+    width: 100%;
+    height: 90%;
+    background-size: contain;
+    position: fixed;
+
+    @include image-2x("../images/Richie@2x.png", 100%, 100%);
+  }
+
+  .logoContainer{
+    background: url("/dist/images/logo.png") no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 50px;
+
+    @include image-2x("../images/logo@2x.png", 100%, 100%);
+  }
+
+  .heroBlotch{
+    width:50%;
+    height: 100%;
+    background: url("../images/large-blotch-half.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    right: 0;
+    top: 30%;
+    z-index: 10;
+
+    @include image-2x("../images/large-blotch-half@2x.png", 40%, 100%);
+
+  }
+
+  .dots{
+    width: 300px;
+    height: 79%;
+    background: url("/dist/images/dots.png") repeat;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    z-index: 11;
+  }
+}
+
+.darkBlotch{
+  width: 100%;
+  height: 1000px;
+  background-color: $black;
+  position: relative;
+  z-index: 9;
+
+  .darkTopBlotch{
+    position: relative;
+    top: -50px;
+  }
+}
