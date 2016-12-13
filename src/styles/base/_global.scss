@@ -1,17 +1,11 @@
 // Global CSS goes here
 
-/* USAGE
+/* TYPOGRAPHY & GENERAL STYLES */
 
-div.logo {
-   background: url("logo.png") no-repeat;
-   @include image-2x("logo2x.png", 100px, 25px);
- }
-
-*/
-
-body{
-  background-color: $lightGray;
-  font-family: "freight-sans-pro",sans-serif;
+p{
+  color: $midGray;
+  font-size: 17px;
+  width:90%;
 }
 
 .bold{
@@ -19,67 +13,72 @@ body{
   font-weight: 700;
 }
 
-.hero{
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: $lightGray;
+  font-family: "freight-sans-pro",sans-serif;
+}
+
+/* HERO SECTION */
+
+.hero {
   width: 100%;
-  height: 90vh;
-  overflow: hidden;
+  height: 100vh;
+  position:relative;
 
-  .heroImage{
+  .heroImage {
     background: url("/dist/images/Richie.png") no-repeat;
-    width: 100%;
-    height: 90%;
+    width: 151%;
+    height: 100%;
     background-size: contain;
-    position: fixed;
-
-    @include image-2x("../images/Richie@2x.png", 100%, 100%);
+    position: absolute;
+    top:15%;
+    right:-38%;
   }
 
-  .logoContainer{
-    background: url("/dist/images/logo.png") no-repeat;
-    width: 300px;
-    height: 300px;
+  .logoContainer {
+    background: url(/dist/images/logo.png) no-repeat;
+    width: 55%;
+    height: 30%;
     background-size: contain;
     display: block;
-    margin: auto;
     position: relative;
-    top: 50px;
-
-    @include image-2x("../images/logo@2x.png", 100%, 100%);
+    z-index: 10;
+    left: 54%;
+    bottom: 30px;
   }
 
-  .heroBlotch{
-    width:750px;
-    height: 100%;
-    max-height: 1000px;
-    background: url("../images/large-blotch-half.png") no-repeat;
+  .heroBlotch {
+    width: 100%;
+    height: 30%;
+    background: url(../images/small-blotch.png) no-repeat;
     position: absolute;
     background-size: contain;
-    right: 0;
-    top: 30%;
-    z-index: 10;
-
-    @include image-2x("../images/large-blotch-half@2x.png", 40%, 100%);
-
-    // ADD MEDIA QUERY TO SWAP IN LARGER IMAGE FOR SCREENS OVER STANDARD SIZES
-
-
+    left: 85%;
+    top:75%;
+    z-index:10;
   }
 
-  .dots{
-    width: 300px;
-    height: 79%;
-    background: url("/dist/images/dots.png") repeat;
-    position: absolute;
-    top: 200px;
-    right: 0;
-    z-index: 11;
-
+  .dots {
+    //width: 285px;
+    //height: 80%;
+    //background: url("/dist/images/dots.png") repeat;
+    //position: absolute;
+    //top: 200px;
+    //right: 0;
+    //z-index: 11;
+    display:none;
   }
 }
 
-.darkBlotch{
-  width: 100%;
-  height: 2000px;
+/* FIRST SECTION */
+
+.first{
+  padding-bottom:80px;
   background-color: $black;
   position: relative;
   top: -25px;
@@ -87,39 +86,98 @@ body{
 
   .darkTopBlotch{
     background: url("../images/black-edge-top.png") repeat-x;
-    width: 100%;
     height: 50px;
     position: relative;
     top: -50px;
   }
-
-  .container{
-    margin-top: 250px;
-  }
 }
 
-.imageHeadline{
-  width: 250px;
-  height: auto;
-}
-
-.smallLogo{
-  width: 100px;
-  height: auto;
-  margin-top: 50px;
+.imageHeadline {
+  width: 200px;
 }
 
 hr {
-  display: block;
   height: 1px;
-  border: 0;
-  border-top: 1px solid $midGray;
+  border-top: 1px solid rgba(187,186,183,0.4);
   margin: 1em 0;
-  padding: 0;
+  width: 75%;
 }
 
-/* TYPOGRAPHY */
-p{
-  color: $midGray;
-  font-size: 20px;
+.smallLogo{
+  width: 60px;
+  margin-top: 12px;
+}
+
+/* SECOND SECTION */
+
+.second {
+  text-align:center;
+
+  .grayTopBlotch{
+    background: url("../images/gray-edge.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: -50px;
+    z-index:10;
+  }
+
+  .coolGlasses {
+    padding-top:100px;
+    padding-bottom:150px;
+  }
+}
+
+/* THIRD SECTION */
+
+.third {
+  background: url(../images/large-blotch-full.png) repeat-x;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  padding-bottom:100px;
+
+  .smallLogo {
+    margin-top: 100px;
+    margin-bottom:0px;
+    position: relative;
+    left: 20px;
+  }
+
+  p {
+    color:$black;
+    margin-bottom:0px;
+  }
+
+  .quote {
+    margin-top:24px;
+  }
+
+  .source {
+    padding-left:20px;
+    font-size:13px;
+  }
+}
+
+/* FOURTH SECTION */
+
+.fourth {
+  padding-bottom:80px;
+  padding-top:80px;
+  position: relative;
+  z-index: 9;
+
+  hr {
+    width:110%;
+  }
+
+  p {
+    color:$black;
+    margin-bottom:0px;
+  }
+
+  .last {
+    margin-top:24px;
+  }
+
 }

@@ -353,109 +353,130 @@ td,
 th {
   padding: 0; }
 
-/* USAGE
-
-div.logo {
-   background: url("logo.png") no-repeat;
-   @include image-2x("logo2x.png", 100px, 25px);
- }
-
-*/
-body {
-  background-color: #e2e1db;
-  font-family: "freight-sans-pro",sans-serif; }
+/* TYPOGRAPHY & GENERAL STYLES */
+p {
+  color: #bbbab7;
+  font-size: 17px;
+  width: 90%; }
 
 .bold {
   font-family: "freight-sans-pro",sans-serif;
   font-weight: 700; }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+body {
+  background-color: #e2e1db;
+  font-family: "freight-sans-pro",sans-serif; }
+
+/* HERO SECTION */
 .hero {
   width: 100%;
-  height: 90vh;
-  overflow: hidden; }
+  height: 100vh;
+  position: relative; }
   .hero .heroImage {
     background: url("/dist/images/Richie.png") no-repeat;
-    width: 100%;
-    height: 90%;
+    width: 151%;
+    height: 100%;
     background-size: contain;
-    position: fixed; }
-    @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-      .hero .heroImage {
-        /* on retina, use image that's scaled by 2 */
-        background-image: url("../images/Richie@2x.png");
-        background-size: 100% 100%; } }
+    position: absolute;
+    top: 15%;
+    right: -38%; }
   .hero .logoContainer {
-    background: url("/dist/images/logo.png") no-repeat;
-    width: 300px;
-    height: 300px;
+    background: url(/dist/images/logo.png) no-repeat;
+    width: 55%;
+    height: 30%;
     background-size: contain;
     display: block;
-    margin: auto;
     position: relative;
-    top: 50px; }
-    @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-      .hero .logoContainer {
-        /* on retina, use image that's scaled by 2 */
-        background-image: url("../images/logo@2x.png");
-        background-size: 100% 100%; } }
+    z-index: 10;
+    left: 54%;
+    bottom: 30px; }
   .hero .heroBlotch {
-    width: 750px;
-    height: 100%;
-    max-height: 1000px;
-    background: url("../images/large-blotch-half.png") no-repeat;
+    width: 100%;
+    height: 30%;
+    background: url(../images/small-blotch.png) no-repeat;
     position: absolute;
     background-size: contain;
-    right: 0;
-    top: 30%;
+    left: 85%;
+    top: 75%;
     z-index: 10; }
-    @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-      .hero .heroBlotch {
-        /* on retina, use image that's scaled by 2 */
-        background-image: url("../images/large-blotch-half@2x.png");
-        background-size: 40% 100%; } }
   .hero .dots {
-    width: 300px;
-    height: 79%;
-    background: url("/dist/images/dots.png") repeat;
-    position: absolute;
-    top: 200px;
-    right: 0;
-    z-index: 11; }
+    display: none; }
 
-.darkBlotch {
-  width: 100%;
-  height: 2000px;
+/* FIRST SECTION */
+.first {
+  padding-bottom: 80px;
   background-color: #000000;
   position: relative;
   top: -25px;
   z-index: 9; }
-  .darkBlotch .darkTopBlotch {
+  .first .darkTopBlotch {
     background: url("../images/black-edge-top.png") repeat-x;
-    width: 100%;
     height: 50px;
     position: relative;
     top: -50px; }
-  .darkBlotch .container {
-    margin-top: 250px; }
 
 .imageHeadline {
-  width: 250px;
-  height: auto; }
-
-.smallLogo {
-  width: 100px;
-  height: auto;
-  margin-top: 50px; }
+  width: 200px; }
 
 hr {
-  display: block;
   height: 1px;
-  border: 0;
-  border-top: 1px solid #bbbab7;
+  border-top: 1px solid rgba(187, 186, 183, 0.4);
   margin: 1em 0;
-  padding: 0; }
+  width: 75%; }
 
-/* TYPOGRAPHY */
-p {
-  color: #bbbab7;
-  font-size: 20px; }
+.smallLogo {
+  width: 60px;
+  margin-top: 12px; }
+
+/* SECOND SECTION */
+.second {
+  text-align: center; }
+  .second .grayTopBlotch {
+    background: url("../images/gray-edge.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: -50px;
+    z-index: 10; }
+  .second .coolGlasses {
+    padding-top: 100px;
+    padding-bottom: 150px; }
+
+/* THIRD SECTION */
+.third {
+  background: url(../images/large-blotch-full.png) repeat-x;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  padding-bottom: 100px; }
+  .third .smallLogo {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    position: relative;
+    left: 20px; }
+  .third p {
+    color: #000000;
+    margin-bottom: 0px; }
+  .third .quote {
+    margin-top: 24px; }
+  .third .source {
+    padding-left: 20px;
+    font-size: 13px; }
+
+/* FOURTH SECTION */
+.fourth {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  position: relative;
+  z-index: 9; }
+  .fourth hr {
+    width: 110%; }
+  .fourth p {
+    color: #000000;
+    margin-bottom: 0px; }
+  .fourth .last {
+    margin-top: 24px; }
