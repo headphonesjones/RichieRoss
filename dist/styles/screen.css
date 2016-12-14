@@ -391,6 +391,9 @@ body {
   @media (min-width: 750px) {
     .hero {
       height: 50vh; } }
+  @media (min-width: 1000px) {
+    .hero {
+      height: 90vh; } }
   .hero .heroImage {
     background: url("/dist/images/Richie.png") no-repeat;
     width: 151%;
@@ -463,11 +466,14 @@ body {
         top: 63%; } }
     @media (min-width: 550px) {
       .hero .dots {
-        height: 60%;
+        height: 62%;
         top: 51%; } }
     @media (min-width: 750px) {
       .hero .dots {
         top: 53%; } }
+    @media (min-width: 1200px) {
+      .hero .dots {
+        top: 51%; } }
 
 /* FIRST SECTION */
 .first {
@@ -520,8 +526,10 @@ hr {
     top: -70px;
     z-index: 10; }
   .second .coolGlasses {
+    width: 100%;
     padding-top: 80px;
-    padding-bottom: 150px; }
+    padding-bottom: 150px;
+    max-width: 650px; }
 
 /* THIRD SECTION */
 .third {
@@ -531,12 +539,15 @@ hr {
   background-position: bottom;
   position: relative;
   padding-bottom: 100px; }
-  @media (min-width: 750px) {
+  @media (min-width: 667px) {
     .third {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 20%;
       padding-bottom: 240px; } }
+  @media (min-width: 1200px) {
+    .third {
+      padding-bottom: 360px; } }
   .third .smallLogo {
     margin-top: 100px;
     margin-bottom: 0px;
@@ -561,8 +572,43 @@ hr {
   z-index: 9; }
   @media (min-width: 750px) {
     .fourth {
-      width: 50%;
-      left: 50%; } }
+      position: relative;
+      bottom: 130px; } }
+  .fourth .logoFg {
+    display: none; }
+    @media (min-width: 750px) {
+      .fourth .logoFg {
+        display: block;
+        width: 150px;
+        position: absolute;
+        left: 5%;
+        top: 1%; } }
+    @media (min-width: 1000px) {
+      .fourth .logoFg {
+        left: 11%; } }
+    @media (min-width: 1200px) {
+      .fourth .logoFg {
+        left: 14%; } }
+  .fourth .dots {
+    display: none; }
+    @media (min-width: 750px) {
+      .fourth .dots {
+        background: url(/dist/images/dots.png);
+        display: block;
+        height: 20%;
+        width: 25%;
+        position: absolute;
+        left: 0;
+        z-index: 11;
+        top: 18%; } }
+    @media (min-width: 1000px) {
+      .fourth .dots {
+        width: 26%; } }
+  @media (min-width: 750px) {
+    .fourth .container {
+      width: 70%;
+      left: 30%;
+      margin-left: 0; } }
   .fourth hr {
     width: 110%; }
   .fourth p {
@@ -576,17 +622,6 @@ hr {
   text-align: center; }
   .fifth img {
     position: relative; }
-  .fifth .dots {
-    display: none; }
-    @media (min-width: 750px) {
-      .fifth .dots {
-        background: url(/dist/images/dots.png);
-        display: block;
-        height: 20%;
-        width: 35%;
-        position: absolute;
-        left: 0;
-        z-index: 11; } }
   .fifth .smallBlotchBg {
     width: 200px;
     position: absolute;
@@ -597,19 +632,35 @@ hr {
     @media (min-width: 550px) {
       .fifth .smallBlotchBg {
         left: 25%; } }
+    @media (min-width: 750px) {
+      .fifth .smallBlotchBg {
+        left: 0; } }
+    @media (min-width: 1000px) {
+      .fifth .smallBlotchBg {
+        left: 6%; } }
+    @media (min-width: 1200px) {
+      .fifth .smallBlotchBg {
+        left: 9%; } }
   .fifth .logoFg {
     width: 150px; }
+    @media (min-width: 750px) {
+      .fifth .logoFg {
+        display: none; } }
   .fifth p {
     padding-top: 80px;
     width: 100%;
     color: #000000;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    padding-bottom: 120px; }
+    @media (min-width: 750px) {
+      .fifth p {
+        width: 70%;
+        left: 30%;
+        margin-left: 0;
+        text-align: left;
+        position: relative; } }
   .fifth .bold {
-    padding-top: 0px;
-    padding-bottom: 80px; }
-    @media (min-width: 550px) {
-      .fifth .bold {
-        display: none; } }
+    padding-top: 0px; }
   .fifth a {
     color: #000000;
     text-decoration: none; }
