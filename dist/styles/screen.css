@@ -479,3 +479,16 @@ hr {
     margin-bottom: 0px; }
   .fourth .last {
     margin-top: 24px; }
+
+/* FIFTH SECTION */
+.fifth {
+  text-align: center; }
+  .fifth img {
+    position: relative; }
+  .fifth .smallBlotchBg {
+    width: 200px;
+    top: 20px;
+    left: 3%; }
+  .fifth .logoFg {
+    width: 150px;
+    right: 30%; }
