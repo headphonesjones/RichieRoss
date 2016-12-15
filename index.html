@@ -15,9 +15,9 @@
 <body>
 <section class="hero">
   <div class="heroImage"></div>
-  <div class="logoContainer"></div>
+  <div class="logoContainer" data-stellar-ratio=".5"></div>
   <div class="heroBlotch"></div>
-  <div class="dots"></div>
+  <div class="dots" data-stellar-ratio="1.5"></div>
 </section>
 
 <section class="first">
@@ -41,10 +41,10 @@
   <img src="dist/images/first-frame.jpg" class="coolGlasses" alt="Richie Ross Logo">
 </section>
 
-<section class="third">
+<section class="third" data-stellar-background-ratio="1.5">
   <div class="container">
     <div class="row">
-      <div class="twelve columns">
+      <div class="twelve columns" data-stellar-ratio="3">
         <img src="dist/images/logo.png" class="smallLogo" alt="Richie Ross Logo">
         <p class="quote">"Ross... one of the most skillful in California."</p>
         <p class="source bold">— Willie Brown, A Biography</p>
@@ -53,7 +53,7 @@
         <p class="quote">"A legendary Sacramento consultant."</p>
         <p class="source bold">— The Nation</p>
         <p class="quote">"Like Ross himself, his book, My Letters to Dead People is an original."</p>
-        <p class="source bold">— The Washington Post</p>
+        <p class="source bold stick">— The Washington Post</p>
       </div>
     </div>
   </div>
@@ -108,7 +108,12 @@
   <div class="footerTopBlotch"></div>
   <p>© 2016 All Rights Reserved</p>
 </footer>
-
+  <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.sticky-kit/1.1.2/jquery.sticky-kit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
   <script src="dist/scripts/main.js"></script>
   <script src="https://use.typekit.net/gnt6wfn.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>

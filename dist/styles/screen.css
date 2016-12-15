@@ -414,7 +414,7 @@ body {
     background-size: contain;
     display: block;
     position: relative;
-    z-index: 10;
+    z-index: 12;
     left: 54%;
     bottom: 30px; }
     @media (min-width: 400px) {
@@ -467,13 +467,16 @@ body {
     @media (min-width: 550px) {
       .hero .dots {
         height: 62%;
-        top: 51%; } }
+        top: 36%; } }
     @media (min-width: 750px) {
       .hero .dots {
-        top: 53%; } }
+        right: -8%; } }
     @media (min-width: 1200px) {
       .hero .dots {
-        top: 51%; } }
+        right: -8%; } }
+    @media (min-width: 1200px) {
+      .hero .dots {
+        top: 31%; } }
 
 /* FIRST SECTION */
 .first {
@@ -488,7 +491,7 @@ body {
     position: relative;
     top: -50px; }
   .first .container {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 80px; }
 
 .imageHeadline {
@@ -518,18 +521,26 @@ hr {
 
 /* SECOND SECTION */
 .second {
-  text-align: center; }
+  text-align: center;
+  background-color: #e2e1db;
+  z-index: 10;
+  position: relative; }
   .second .grayTopBlotch {
     background: url("../images/gray-edge-2.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -70px;
+    top: -50px;
     z-index: 10; }
   .second .coolGlasses {
     width: 100%;
     padding-top: 80px;
     padding-bottom: 150px;
-    max-width: 650px; }
+    max-width: 650px;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+            transition: opacity 1s ease; }
+    .second .coolGlasses.hide {
+      opacity: 0; }
 
 /* THIRD SECTION */
 .third {
@@ -538,7 +549,8 @@ hr {
   background-size: cover;
   background-position: bottom;
   position: relative;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  z-index: 11; }
   @media (min-width: 667px) {
     .third {
       background-size: contain;
@@ -548,6 +560,13 @@ hr {
   @media (min-width: 1200px) {
     .third {
       padding-bottom: 360px; } }
+  .third .columns {
+    display: block !important;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+            transition: opacity 1s ease; }
+    .third .columns.hide {
+      opacity: 0; }
   .third .smallLogo {
     margin-top: 100px;
     margin-bottom: 0px;
@@ -569,26 +588,31 @@ hr {
   padding-bottom: 80px;
   padding-top: 80px;
   position: relative;
-  z-index: 9; }
+  z-index: 12; }
   @media (min-width: 750px) {
     .fourth {
       position: relative;
       bottom: 130px; } }
   .fourth .logoFg {
-    display: none; }
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease;
+            transition: opacity 1s ease; }
+    .fourth .logoFg.show {
+      opacity: 1; }
     @media (min-width: 750px) {
       .fourth .logoFg {
         display: block;
-        width: 150px;
+        width: 250px;
         position: absolute;
         left: 5%;
-        top: 1%; } }
+        top: -20%; } }
     @media (min-width: 1000px) {
       .fourth .logoFg {
         left: 11%; } }
     @media (min-width: 1200px) {
       .fourth .logoFg {
-        left: 14%; } }
+        left: 8%; } }
   .fourth .dots {
     display: none; }
     @media (min-width: 750px) {
@@ -603,14 +627,16 @@ hr {
         top: 18%; } }
     @media (min-width: 1000px) {
       .fourth .dots {
-        width: 26%; } }
+        width: 26%;
+        height: 40%; } }
   @media (min-width: 750px) {
     .fourth .container {
       width: 70%;
       left: 30%;
       margin-left: 0; } }
   .fourth hr {
-    width: 110%; }
+    width: 110%;
+    border-color: #000000; }
   .fourth p {
     color: #000000;
     margin-bottom: 0px; }
@@ -619,7 +645,10 @@ hr {
 
 /* FIFTH SECTION */
 .fifth {
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 9;
+  background-color: #e2e1db; }
   .fifth img {
     position: relative; }
   .fifth .smallBlotchBg {
