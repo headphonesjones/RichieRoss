@@ -300,6 +300,29 @@ hr {
   }
 }
 
+.dotsContainer{
+  display: block;
+  position:absolute;
+  z-index: 10;
+  width: 100%;
+  height: 400px;
+
+  .dots {
+    display: none;
+
+    @media (min-width: 750px) {
+      background: url(/dist/images/dots.png);
+      display: block;
+      height: 70%;
+      width: 25%;
+      position: absolute;
+      left: 0;
+      z-index: 11;
+      top: 120%;
+    }
+  }
+}
+
 /* FOURTH SECTION */
 
 .fourth {
@@ -320,6 +343,11 @@ hr {
 
     &.show {
       opacity:1;
+    }
+
+    &.is_stuck {
+      position:fixed !important;
+      top:200px !important;
     }
 
     @media (min-width: 750px) {
@@ -389,8 +417,10 @@ hr {
 .fifth {
   text-align:center;
   position: relative;
-  z-index: 9;
+  z-index: 10;
   background-color:$lightGray;
+  padding-bottom:240px;
+  padding-top:240px;
 
   img {
     position: relative;
@@ -411,6 +441,7 @@ hr {
 
     @media (min-width: 750px) {
       left:0;
+      width:300px;
     }
 
     @media (min-width: 1000px) {
@@ -418,7 +449,7 @@ hr {
     }
 
     @media (min-width: 1200px) {
-      left:9%;
+      left:1%;
     }
   }
 
@@ -463,6 +494,9 @@ hr {
 
 footer {
   background:$midGray;
+  z-index:10;
+  position:relative;
+  padding-bottom:80px;
 
   .footerTopBlotch {
     background: url("../images/gray-edge.png") repeat-x;

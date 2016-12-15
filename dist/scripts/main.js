@@ -5,6 +5,7 @@
 $(window).stellar();
 
 $(".first").stick_in_parent();
+
 $(".second").stick_in_parent()
     .on("sticky_kit:stick", function(e) {
         $(".coolGlasses").attr('src','/dist/images/MOVIE_7-01.gif');
@@ -24,4 +25,6 @@ $(".third").stick_in_parent()
         $(".fourth .logoFg").removeClass('show');
         $(".coolGlasses").removeClass('hide');
     });
-$(".fourth .logoFg").stick_in_parent();
+$(".fourth .logoFg").stick_in_parent({
+    offset_top: 200
+});

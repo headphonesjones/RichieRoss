@@ -583,6 +583,25 @@ hr {
       .third .source {
         font-size: 15px; } }
 
+.dotsContainer {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 400px; }
+  .dotsContainer .dots {
+    display: none; }
+    @media (min-width: 750px) {
+      .dotsContainer .dots {
+        background: url(/dist/images/dots.png);
+        display: block;
+        height: 70%;
+        width: 25%;
+        position: absolute;
+        left: 0;
+        z-index: 11;
+        top: 120%; } }
+
 /* FOURTH SECTION */
 .fourth {
   padding-bottom: 80px;
@@ -600,6 +619,9 @@ hr {
             transition: opacity 1s ease; }
     .fourth .logoFg.show {
       opacity: 1; }
+    .fourth .logoFg.is_stuck {
+      position: fixed !important;
+      top: 200px !important; }
     @media (min-width: 750px) {
       .fourth .logoFg {
         display: block;
@@ -647,8 +669,10 @@ hr {
 .fifth {
   text-align: center;
   position: relative;
-  z-index: 9;
-  background-color: #e2e1db; }
+  z-index: 10;
+  background-color: #e2e1db;
+  padding-bottom: 240px;
+  padding-top: 240px; }
   .fifth img {
     position: relative; }
   .fifth .smallBlotchBg {
@@ -663,13 +687,14 @@ hr {
         left: 25%; } }
     @media (min-width: 750px) {
       .fifth .smallBlotchBg {
-        left: 0; } }
+        left: 0;
+        width: 300px; } }
     @media (min-width: 1000px) {
       .fifth .smallBlotchBg {
         left: 6%; } }
     @media (min-width: 1200px) {
       .fifth .smallBlotchBg {
-        left: 9%; } }
+        left: 1%; } }
   .fifth .logoFg {
     width: 150px; }
     @media (min-width: 750px) {
@@ -695,7 +720,10 @@ hr {
     text-decoration: none; }
 
 footer {
-  background: #bbbab7; }
+  background: #bbbab7;
+  z-index: 10;
+  position: relative;
+  padding-bottom: 80px; }
   footer .footerTopBlotch {
     background: url("../images/gray-edge.png") repeat-x;
     height: 50px;
