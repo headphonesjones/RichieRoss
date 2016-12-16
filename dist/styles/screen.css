@@ -624,7 +624,7 @@ hr {
   .fourth .logoFg {
     -webkit-transition: opacity 1s ease;
             transition: opacity 1s ease;
-    opacity: 1;
+    opacity: 0;
     top: 127%;
     left: 9%;
     position: absolute;
@@ -636,10 +636,11 @@ hr {
       top: 200px !important; }
     @media (min-width: 1000px) {
       .fourth .logoFg {
-        left: 11%; } }
+        left: 11%;
+        display: block;
+        opacity: 1; } }
     @media (min-width: 1025px) {
       .fourth .logoFg {
-        display: block;
         position: absolute;
         top: -20%;
         width: 150px;
