@@ -340,17 +340,20 @@ hr {
   padding-bottom:80px;
   padding-top:80px;
   position: relative;
-  z-index: 12;
+  z-index: 16;
 
-  @media (min-width: 750px) {
+  @media (min-width: 1025px) {
     position: relative;
     bottom: 130px;
   }
 
   .logoFg {
-    display:none;
-    opacity:0;
     transition:opacity 1s ease;
+    opacity: 1;
+    top: 127%;
+    left: 9%;
+    position:absolute;
+    width:150px;
 
     &.show {
       opacity:1;
@@ -361,20 +364,21 @@ hr {
       top:200px !important;
     }
 
-    @media (min-width: 750px) {
-      display:block;
-      width: 250px;
-      position: absolute;
-      left: 5%;
-      top: -20%;
-    }
-
     @media (min-width: 1000px) {
       left: 11%;
     }
 
+    @media (min-width: 1025px) {
+      display:block;
+      position: absolute;
+      top: -20%;
+      width:150px;
+      opacity:0;
+    }
+
     @media (min-width: 1200px) {
       left:8%;
+      width: 250px;
     }
   }
 
@@ -430,8 +434,14 @@ hr {
   position: relative;
   z-index: 10;
   background-color:$lightGray;
-  padding-bottom:240px;
-  padding-top:240px;
+  padding-top:120px;
+  padding-bottom:120px;
+  z-index: 15;
+
+  @media (min-width: 400px) {
+    padding-bottom:240px;
+    padding-top:240px;
+  }
 
   img {
     position: relative;
@@ -452,7 +462,6 @@ hr {
 
     @media (min-width: 750px) {
       left:0;
-      width:300px;
     }
 
     @media (min-width: 1000px) {
@@ -461,6 +470,7 @@ hr {
 
     @media (min-width: 1200px) {
       left:1%;
+      width:300px;
     }
   }
 
@@ -474,10 +484,16 @@ hr {
 
   p {
     padding-top: 80px;
-    width: 100%;
     color: $black;
     margin-bottom:0px;
     padding-bottom:120px;
+    width: 80%;
+    margin: auto;
+    padding-right: 0px;
+
+    @media (min-width: 400px) {
+      width:100%;
+    }
 
     @media (min-width: 750px) {
       width: 70%;
@@ -508,6 +524,7 @@ footer {
   z-index:10;
   position:relative;
   padding-bottom:80px;
+  z-index:17;
 
   .footerTopBlotch {
     background: url("../images/gray-edge.png") repeat-x;
