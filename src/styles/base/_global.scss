@@ -118,6 +118,12 @@ body{
       top: 40%;
       height: 80%;
     }
+
+    @media (min-width: 1280px) {
+      top: 30%;
+      height: 90%;
+      left: 70%; 
+    }
   }
 
   .dots {
@@ -153,7 +159,8 @@ body{
     }
 
     @media (min-width: 1200px) {
-      top: 31%;
+      top: 26%;
+      height: 61%;
     }
   }
 }
@@ -314,7 +321,7 @@ hr {
       background: url(/dist/images/dots.png);
       display: block;
       height: 70%;
-      width: 25%;
+      width: 24.5%;
       position: absolute;
       left: 0;
       z-index: 11;
