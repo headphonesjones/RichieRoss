@@ -71,7 +71,7 @@ body{
   }
 
   .logoContainer {
-    background: url(/dist/images/logo.png) no-repeat;
+    background: url(/dist/images/logo_small_short-01.gif) no-repeat;
     width: 55%;
     height: 30%;
     background-size: contain;
@@ -80,6 +80,7 @@ body{
     z-index: 12;
     left: 54%;
     bottom: 30px;
+    z-index: -1;
 
     @media (min-width: 400px) {
       bottom: 0;
@@ -115,7 +116,7 @@ body{
     }
 
     @media (min-width: 550px) {
-      top: 40%;
+      top: 30%;
       height: 80%;
     }
 
@@ -178,7 +179,7 @@ body{
     background: url("../images/black-edge-top.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px;
+    top: -49px;
   }
 
   .container {
@@ -230,12 +231,13 @@ hr {
   background-color:$lightGray;
   z-index:10;
   position:relative;
+  height: 110vh;
 
   .grayTopBlotch{
     background: url("../images/gray-edge-2.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px;
+    top: -49px;
     z-index:10;
   }
 
@@ -243,7 +245,7 @@ hr {
     width:100%;
     padding-top:80px;
     padding-bottom:150px;
-    max-width:650px;
+    max-width:800px;
 
     opacity:1;
     transition:opacity 1s ease;
@@ -257,13 +259,13 @@ hr {
 /* THIRD SECTION */
 
 .third {
-  background: url(../images/large-blotch-full.png) repeat-x;
+  background-color: $blotchColor;
   width: 100%;
-  background-size: cover;
-  background-position: bottom;
-  position: relative;
-  padding-bottom:100px;
-  z-index:11;
+  position: fixed;
+  top: 0;
+  z-index:2;
+  display: none;
+  height: 100vh;
 
   @media (min-width: 667px) {
     background-size:contain;
@@ -280,6 +282,8 @@ hr {
     display:block !important;
     opacity:1;
     transition:opacity 2s ease;
+    position: relative;
+    top: 300px;
 
     &.hide {
       opacity:0;
@@ -334,6 +338,27 @@ hr {
   }
 }
 
+.thirdReveal{
+  width: 100%;
+  height: 600px;
+  position: relative;
+
+  .grayTopBlotch{
+    background: url("../images/gray-edge-2bottom.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: -2px;
+    z-index:10;
+  }
+  .grayBottomBlotch{
+    background: url("../images/gray-edge-2.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: 512px;
+    z-index:10;
+  }
+}
+
 /* FOURTH SECTION */
 
 .fourth {
@@ -341,10 +366,16 @@ hr {
   padding-top:80px;
   position: relative;
   z-index: 16;
+  padding-left: 200px;
+  background-color: $lightGray;
 
   @media (min-width: 1025px) {
     position: relative;
-    bottom: 130px;
+    bottom: -10px;
+  }
+
+  @media screen and (max-width: 550px){
+    padding-left: 50px;
   }
 
   .logoFg {
@@ -403,6 +434,12 @@ hr {
     }
   }
 
+  .smallBlotchBg{
+    position: absolute;
+    top: 500px;
+    right: 400px;
+  }
+
   .container {
 
     @media (min-width: 750px) {
@@ -419,7 +456,7 @@ hr {
 
   p {
     color:$black;
-    margin-bottom:0px;
+    margin-bottom:20px;
   }
 
   .last {
@@ -531,7 +568,7 @@ footer {
     background: url("../images/gray-edge.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px;
+    top: -49px;
     z-index:10;
   }
 

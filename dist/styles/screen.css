@@ -408,7 +408,7 @@ body {
         right: 0%;
         top: 0%; } }
   .hero .logoContainer {
-    background: url(/dist/images/logo.png) no-repeat;
+    background: url(/dist/images/logo_small_short-01.gif) no-repeat;
     width: 55%;
     height: 30%;
     background-size: contain;
@@ -416,7 +416,8 @@ body {
     position: relative;
     z-index: 12;
     left: 54%;
-    bottom: 30px; }
+    bottom: 30px;
+    z-index: -1; }
     @media (min-width: 400px) {
       .hero .logoContainer {
         bottom: 0;
@@ -446,7 +447,7 @@ body {
         background-size: contain; } }
     @media (min-width: 550px) {
       .hero .heroBlotch {
-        top: 40%;
+        top: 30%;
         height: 80%; } }
     @media (min-width: 1280px) {
       .hero .heroBlotch {
@@ -495,7 +496,7 @@ body {
     background: url("../images/black-edge-top.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px; }
+    top: -49px; }
   .first .container {
     padding-top: 0px;
     padding-bottom: 80px; }
@@ -533,18 +534,19 @@ hr {
   text-align: center;
   background-color: #e2e1db;
   z-index: 10;
-  position: relative; }
+  position: relative;
+  height: 110vh; }
   .second .grayTopBlotch {
     background: url("../images/gray-edge-2.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px;
+    top: -49px;
     z-index: 10; }
   .second .coolGlasses {
     width: 100%;
     padding-top: 80px;
     padding-bottom: 150px;
-    max-width: 650px;
+    max-width: 800px;
     opacity: 1;
     -webkit-transition: opacity 1s ease;
             transition: opacity 1s ease; }
@@ -553,13 +555,13 @@ hr {
 
 /* THIRD SECTION */
 .third {
-  background: url(../images/large-blotch-full.png) repeat-x;
+  background-color: #fc9378;
   width: 100%;
-  background-size: cover;
-  background-position: bottom;
-  position: relative;
-  padding-bottom: 100px;
-  z-index: 11; }
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: none;
+  height: 100vh; }
   @media (min-width: 667px) {
     .third {
       background-size: contain;
@@ -573,7 +575,9 @@ hr {
     display: block !important;
     opacity: 1;
     -webkit-transition: opacity 2s ease;
-            transition: opacity 2s ease; }
+            transition: opacity 2s ease;
+    position: relative;
+    top: 300px; }
     .third .columns.hide {
       opacity: 0; }
   .third .smallLogo {
@@ -611,16 +615,38 @@ hr {
         z-index: 11;
         top: 120%; } }
 
+.thirdReveal {
+  width: 100%;
+  height: 600px;
+  position: relative; }
+  .thirdReveal .grayTopBlotch {
+    background: url("../images/gray-edge-2bottom.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: -2px;
+    z-index: 10; }
+  .thirdReveal .grayBottomBlotch {
+    background: url("../images/gray-edge-2.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: 512px;
+    z-index: 10; }
+
 /* FOURTH SECTION */
 .fourth {
   padding-bottom: 80px;
   padding-top: 80px;
   position: relative;
-  z-index: 16; }
+  z-index: 16;
+  padding-left: 200px;
+  background-color: #e2e1db; }
   @media (min-width: 1025px) {
     .fourth {
       position: relative;
-      bottom: 130px; } }
+      bottom: -10px; } }
+  @media screen and (max-width: 550px) {
+    .fourth {
+      padding-left: 50px; } }
   .fourth .logoFg {
     -webkit-transition: opacity 1s ease;
             transition: opacity 1s ease;
@@ -665,6 +691,10 @@ hr {
       .fourth .dots {
         width: 26%;
         height: 40%; } }
+  .fourth .smallBlotchBg {
+    position: absolute;
+    top: 500px;
+    right: 400px; }
   @media (min-width: 750px) {
     .fourth .container {
       width: 70%;
@@ -675,7 +705,7 @@ hr {
     border-color: #000000; }
   .fourth p {
     color: #000000;
-    margin-bottom: 0px; }
+    margin-bottom: 20px; }
   .fourth .last {
     margin-top: 24px; }
 
@@ -753,7 +783,7 @@ footer {
     background: url("../images/gray-edge.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px;
+    top: -49px;
     z-index: 10; }
   footer p {
     color: #000000;
