@@ -369,6 +369,10 @@ p {
   font-family: "freight-sans-pro",sans-serif;
   font-weight: 700; }
 
+.blackFont {
+  color: #000000;
+  text-decoration: none; }
+
 html, body {
   max-width: 100%;
   overflow-x: hidden; }
@@ -790,5 +794,5 @@ footer {
     width: 100%;
     margin-bottom: 0px;
     text-align: center;
-    top: -30px;
+    top: 10px;
     position: relative; }
