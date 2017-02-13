@@ -80,21 +80,19 @@ $(window).scroll(function () {
 var scroll = function () {
     var scrollPos = $(document).scrollTop();
     var startGif = $(".second").offset().top - 300;
-    console.log('scroll pos:' + scrollPos);
-    console.log('start gif:' + startGif);
 
     if(waitToPlayGif && scrollPos > startGif){
         waitToPlayGif = false;
         $(document).off('scroll', scroll);
         $(".coolGlasses").attr('src','/dist/images/cool-glasses.gif');
     }
-    else if(scrollPos > startGif + 350){
+    else if(scrollPos > startGif + 400){
         $(".third").css("display", "block");
-        $(".first").css("display", "none");
+        // $(".first").css("display", "none");
     }
     else{
         $(".third").css("display", "none");
-        $(".first").css("display", "block");
+        // $(".first").css("display", "block");
     }
 
 }

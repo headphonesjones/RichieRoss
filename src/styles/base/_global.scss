@@ -21,6 +21,10 @@ p{
   font-weight: 700;
 }
 
+.italic{
+  font-style: italic;
+}
+
 .blackFont {
   color:$black;
   text-decoration:none;
@@ -73,6 +77,29 @@ body{
       right:0%;
       top:0%;
     }
+
+    @media (max-width: 1375px){
+      top: 10%;
+    }
+
+    @media (max-width: 1200px){
+      top: 20%;
+    }
+
+    @media (max-width: 750px){
+      width: 100%;
+      top: 54%;
+      right: 5%;
+    }
+
+    @media (max-width: 550px){
+      width: 131%;
+      height: 100%;
+      background-size: contain;
+      position: absolute;
+      top: 26%;
+      right: -15%;
+    }
   }
 
   .logoContainer {
@@ -99,6 +126,11 @@ body{
 
     @media (min-width: 750px) {
       height:35%;
+    }
+
+    @media (max-width: 550px){
+      left: 44%;
+      bottom: -60px;
     }
   }
 
@@ -129,6 +161,10 @@ body{
       top: 30%;
       height: 90%;
       left: 70%; 
+    }
+
+    @media (max-width: 550px){
+      left: 65%;
     }
   }
 
@@ -236,7 +272,7 @@ hr {
   background-color:$lightGray;
   z-index:10;
   position:relative;
-  height: 110vh;
+  height: 120vh;
 
   .grayTopBlotch{
     background: url("../images/gray-edge-2.png") repeat-x;
@@ -268,7 +304,7 @@ hr {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index:2;
+  z-index:9;
   display: none;
   height: 100vh;
 
@@ -292,6 +328,11 @@ hr {
 
     &.hide {
       opacity:0;
+    }
+
+    @media (max-width: 550px){
+      position: relative;
+      top: 100px;
     }
   }
 
@@ -443,6 +484,14 @@ hr {
     position: absolute;
     top: 500px;
     right: 400px;
+
+    @media (max-width: 1300px){
+      right: 100px;
+    }
+
+    @media (max-width: 960px){
+      display: none;
+    }
   }
 
   .container {
@@ -470,119 +519,58 @@ hr {
 
 }
 
-/* FIFTH SECTION */
-
-.fifth {
-  text-align:center;
-  position: relative;
-  z-index: 10;
-  background-color:$lightGray;
-  padding-top:120px;
-  padding-bottom:120px;
-  z-index: 15;
-
-  @media (min-width: 400px) {
-    padding-bottom:240px;
-    padding-top:240px;
-  }
-
-  img {
-    position: relative;
-  }
-
-  .smallBlotchBg {
-    width:200px;
-    position:absolute;
-    left:0;
-
-    @media (min-width: 400px) {
-      left:15%;
-    }
-
-    @media (min-width: 550px) {
-      left:25%;
-    }
-
-    @media (min-width: 750px) {
-      left:0;
-    }
-
-    @media (min-width: 1000px) {
-      left:6%;
-    }
-
-    @media (min-width: 1200px) {
-      left:1%;
-      width:300px;
-    }
-  }
-
-  .logoFg {
-    width:150px;
-
-    @media (min-width: 750px) {
-      display:none;
-    }
-  }
-
-  p {
-    padding-top: 80px;
-    color: $black;
-    margin-bottom:0px;
-    padding-bottom:120px;
-    width: 80%;
-    margin: auto;
-    padding-right: 0px;
-
-    @media (min-width: 400px) {
-      width:100%;
-    }
-
-    @media (min-width: 750px) {
-      width: 70%;
-      left: 30%;
-      margin-left: 0;
-      text-align: left;
-      position:relative;
-    }
-  }
-
-  .bold {
-    padding-top:0px;
-
-    @media (min-width: 550px) {
-
-    }
-  }
-
-  a {
-    color:$black;
-    text-decoration:none;
-  }
-
-}
 
 footer {
-  background:$midGray;
+  background:$black;
   z-index:10;
   position:relative;
   padding-bottom:80px;
+  padding-top: 50px;
   z-index:17;
 
   .footerTopBlotch {
-    background: url("../images/gray-edge.png") repeat-x;
+    background: url(/dist/images/gray-edge-2bottom.png) repeat-x;
     height: 50px;
     position: relative;
-    top: -49px;
+    top: -52px;
     z-index:10;
   }
 
   p {
-    color:$black;
+    color:$lightGray;
     width:100%;
     margin-bottom:0px;
-    text-align:center;
     top: 10px;
     position: relative;
+    padding-left: 50px;
+
+    @media (max-width: 550px){
+      padding-left: 20px;
+    }
+  }
+
+  a{
+    font-size: 20px;
+    color: $lightGray;
+    text-decoration: none;
+    padding-left: 50px;
+
+    @media (max-width: 550px){
+      padding-left: 20px;
+    }
+
+    &:hover{
+      color: $blotchColor;
+    }
+  }
+
+  .footerLogo{
+    display: block;
+    margin-top: 100px;
+    margin-left: 50px;
+
+    @media (max-width: 550px){
+      margin-left: 20px;
+    }
   }
 }
