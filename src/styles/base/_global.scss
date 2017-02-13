@@ -286,7 +286,7 @@ hr {
     width:100%;
     padding-top:80px;
     padding-bottom:150px;
-    max-width:800px;
+    max-width:960px;
 
     opacity:1;
     transition:opacity 1s ease;
@@ -421,6 +421,10 @@ hr {
 
   @media screen and (max-width: 550px){
     padding-left: 50px;
+  }
+
+  .imageHeadline{
+    margin-bottom: 30px;
   }
 
   .logoFg {

@@ -579,7 +579,7 @@ hr {
     width: 100%;
     padding-top: 80px;
     padding-bottom: 150px;
-    max-width: 800px;
+    max-width: 960px;
     opacity: 1;
     -webkit-transition: opacity 1s ease;
             transition: opacity 1s ease; }
@@ -683,6 +683,8 @@ hr {
   @media screen and (max-width: 550px) {
     .fourth {
       padding-left: 50px; } }
+  .fourth .imageHeadline {
+    margin-bottom: 30px; }
   .fourth .logoFg {
     -webkit-transition: opacity 1s ease;
             transition: opacity 1s ease;
