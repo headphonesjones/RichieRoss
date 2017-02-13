@@ -412,7 +412,6 @@ hr {
   padding-top:80px;
   position: relative;
   z-index: 16;
-  padding-left: 200px;
   background-color: $lightGray;
 
   @media (min-width: 1025px) {
@@ -494,15 +493,6 @@ hr {
     }
   }
 
-  .container {
-
-    @media (min-width: 750px) {
-      width: 70%;
-      left: 30%;
-      margin-left:0;
-    }
-  }
-
   hr {
     width:110%;
     border-color:$black;
@@ -542,22 +532,13 @@ footer {
     margin-bottom:0px;
     top: 10px;
     position: relative;
-    padding-left: 50px;
 
-    @media (max-width: 550px){
-      padding-left: 20px;
-    }
   }
 
   a{
     font-size: 20px;
     color: $lightGray;
     text-decoration: none;
-    padding-left: 50px;
-
-    @media (max-width: 550px){
-      padding-left: 20px;
-    }
 
     &:hover{
       color: $blotchColor;
@@ -567,10 +548,6 @@ footer {
   .footerLogo{
     display: block;
     margin-top: 100px;
-    margin-left: 50px;
-
-    @media (max-width: 550px){
-      margin-left: 20px;
-    }
+    margin-left: 0px;
   }
 }

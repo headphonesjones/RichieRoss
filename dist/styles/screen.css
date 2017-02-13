@@ -675,7 +675,6 @@ hr {
   padding-top: 80px;
   position: relative;
   z-index: 16;
-  padding-left: 200px;
   background-color: #e2e1db; }
   @media (min-width: 1025px) {
     .fourth {
@@ -738,11 +737,6 @@ hr {
     @media (max-width: 960px) {
       .fourth .smallBlotchBg {
         display: none; } }
-  @media (min-width: 750px) {
-    .fourth .container {
-      width: 70%;
-      left: 30%;
-      margin-left: 0; } }
   .fourth hr {
     width: 110%;
     border-color: #000000; }
@@ -770,25 +764,14 @@ footer {
     width: 100%;
     margin-bottom: 0px;
     top: 10px;
-    position: relative;
-    padding-left: 50px; }
-    @media (max-width: 550px) {
-      footer p {
-        padding-left: 20px; } }
+    position: relative; }
   footer a {
     font-size: 20px;
     color: #e2e1db;
-    text-decoration: none;
-    padding-left: 50px; }
-    @media (max-width: 550px) {
-      footer a {
-        padding-left: 20px; } }
+    text-decoration: none; }
     footer a:hover {
       color: #fc9378; }
   footer .footerLogo {
     display: block;
     margin-top: 100px;
-    margin-left: 50px; }
-    @media (max-width: 550px) {
-      footer .footerLogo {
-        margin-left: 20px; } }
+    margin-left: 0px; }

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ea41c7-49bc-4091-9f34-072f011356da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/site.iml" afterPath="$PROJECT_DIR$/.idea/site.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/main.js" afterPath="$PROJECT_DIR$/dist/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/main.min.js" afterPath="$PROJECT_DIR$/dist/scripts/main.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/screen.css" afterPath="$PROJECT_DIR$/dist/styles/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/screen.min.css" afterPath="$PROJECT_DIR$/dist/styles/screen.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/main.js" afterPath="$PROJECT_DIR$/src/scripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/base/_global.scss" afterPath="$PROJECT_DIR$/src/styles/base/_global.scss" />
     </list>
     <ignored path="site.iws" />
@@ -36,24 +32,24 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="95" column="49" lean-forward="false" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="62" />
+            <state relative-caret-position="288">
+              <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="97" selection-end-column="116" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_global.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_global.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/base/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="492" column="20" lean-forward="false" selection-start-line="492" selection-start-column="20" selection-end-line="492" selection-end-column="20" />
+            <state relative-caret-position="844">
+              <caret line="550" column="21" lean-forward="false" selection-start-line="550" selection-start-column="21" selection-end-line="550" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="729">
@@ -103,9 +99,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/styles/base/_variables.scss" />
         <option value="$PROJECT_DIR$/dist/scripts/main.js" />
+        <option value="$PROJECT_DIR$/src/scripts/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/styles/base/_global.scss" />
-        <option value="$PROJECT_DIR$/src/scripts/main.js" />
       </list>
     </option>
   </component>
@@ -313,7 +309,7 @@
       <workItem from="1481729540786" duration="20636000" />
       <workItem from="1481905251027" duration="4646000" />
       <workItem from="1486577813482" duration="6576000" />
-      <workItem from="1487004375649" duration="2738000" />
+      <workItem from="1487004375649" duration="3074000" />
     </task>
     <task id="LOCAL-00001" summary="V3 start. Only main thing left for desktop is the footer.">
       <created>1486587247104</created>
@@ -322,11 +318,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486587247104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added new footer from PDF and did mobile styling">
+      <created>1487007129551</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487007129551</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57943000" />
+    <option name="totallyTimeSpent" value="58279000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,7 +405,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V3 start. Only main thing left for desktop is the footer." />
-    <option name="LAST_COMMIT_MESSAGE" value="V3 start. Only main thing left for desktop is the footer." />
+    <MESSAGE value="Added new footer from PDF and did mobile styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new footer from PDF and did mobile styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -650,26 +654,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="81" column="51" lean-forward="false" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="95" column="49" lean-forward="false" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="62" />
+        <state relative-caret-position="288">
+          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="97" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/base/_global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="492" column="20" lean-forward="false" selection-start-line="492" selection-start-column="20" selection-end-line="492" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="81" column="51" lean-forward="false" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
+        <state relative-caret-position="844">
+          <caret line="550" column="21" lean-forward="false" selection-start-line="550" selection-start-column="21" selection-end-line="550" selection-end-column="21" />
           <folding />
         </state>
       </provider>
