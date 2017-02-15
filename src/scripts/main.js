@@ -22,7 +22,8 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-jQuery(document).ready(function(){
+$(".first").stick_in_parent();
+$(document).ready(function(){
     if( !isMobile.any() ){
         $(window).stellar();
 
@@ -57,7 +58,7 @@ jQuery(document).ready(function(){
                 $(".third").css("z-index", "11");
             });
     } else {
-        $(".coolGlasses").attr('src','/dist/images/MOVIE_7-01.gif');
+        $(".coolGlasses").attr('src','/dist/images/cool-glasses-2.gif');
     }
 });
 
@@ -79,21 +80,30 @@ $(window).scroll(function () {
 
 var scroll = function () {
     var scrollPos = $(document).scrollTop();
-    var startGif = $(".second").offset().top - 300;
+    var startGif = $(".coolGlasses").offset().top;
+    var swapSections = $(".second").offset().top;
+    var swapFooter = $(".fourth .twelve").offset().top;
 
-    if(waitToPlayGif && scrollPos > startGif){
+    if(waitToPlayGif && scrollPos > startGif - 100){
         waitToPlayGif = false;
         $(document).off('scroll', scroll);
-        $(".coolGlasses").attr('src','/dist/images/cool-glasses.gif');
+        $(".coolGlasses").attr('src','/dist/images/cool-glasses-2.gif');
+        $(".fixedFooter").removeClass("active");
     }
-    else if(scrollPos > startGif + 400){
-        $(".third").css("display", "block");
+    else if(scrollPos > swapSections){
+        $(".third").addClass("active");
         // $(".first").css("display", "none");
+        $(".fixedFooter").removeClass("active");
     }
     else{
-        $(".third").css("display", "none");
+        $(".third").removeClass("active");
         // $(".first").css("display", "block");
     }
+    if (scrollPos > swapFooter){
+        $(".third").removeClass("active");
+        $(".fixedFooter").addClass("active");
+    }
+
 
 }
 

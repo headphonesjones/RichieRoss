@@ -272,7 +272,11 @@ hr {
   background-color:$lightGray;
   z-index:10;
   position:relative;
-  height: 120vh;
+  height: 120%;
+
+  @media screen and (max-width: 550px){
+    height: 130%;
+  }
 
   .grayTopBlotch{
     background: url("../images/gray-edge-2.png") repeat-x;
@@ -280,6 +284,7 @@ hr {
     position: relative;
     top: -49px;
     z-index:10;
+
   }
 
   .coolGlasses {
@@ -287,12 +292,19 @@ hr {
     padding-top:80px;
     padding-bottom:150px;
     max-width:960px;
-
+    position: relative;
+    left: -30px;
     opacity:1;
     transition:opacity 1s ease;
 
     &.hide {
       opacity:0;
+    }
+
+    @media screen and (max-width: 550px){
+      margin-top:50px;
+      position: relative;
+      left: -10px;
     }
   }
 }
@@ -305,8 +317,13 @@ hr {
   position: fixed;
   top: 0;
   z-index:9;
-  display: none;
+  opacity: 0;
   height: 100vh;
+  transition: all 0s ease;
+
+  &.active{
+    opacity: 1;
+  }
 
   @media (min-width: 667px) {
     background-size:contain;
@@ -332,7 +349,7 @@ hr {
 
     @media (max-width: 550px){
       position: relative;
-      top: 100px;
+      top: 50px;
     }
   }
 
@@ -427,6 +444,16 @@ hr {
     margin-bottom: 30px;
   }
 
+  .footerTopBlotch {
+      background: url(/dist/images/gray-edge-2bottom.png) repeat-x;
+      height: 50px;
+      position: absolute;
+      bottom: -48px;
+      z-index:10;
+      width: 100vw;
+     left: 0;
+    }
+
   .logoFg {
     transition:opacity 1s ease;
     opacity: 0;
@@ -517,18 +544,32 @@ hr {
 footer {
   background:$black;
   z-index:10;
-  position:relative;
+  position:fixed;
+  opacity: 0;
   padding-bottom:80px;
-  padding-top: 50px;
-  z-index:17;
+  padding-top: 90px;
+  z-index:9;
+  transition: all 0s ease;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
 
-  .footerTopBlotch {
-    background: url(/dist/images/gray-edge-2bottom.png) repeat-x;
-    height: 50px;
-    position: relative;
-    top: -52px;
-    z-index:10;
+  &.active{
+    opacity: 1;
   }
+
+  .container{
+    display: block;
+    margin-top: 20px;
+  }
+
+  //.footerTopBlotch {
+  //  background: url(/dist/images/gray-edge-2bottom.png) repeat-x;
+  //  height: 50px;
+  //  position: relative;
+  //  top: -52px;
+  //  z-index:10;
+  //}
 
   p {
     color:$lightGray;
@@ -553,5 +594,12 @@ footer {
     display: block;
     margin-top: 100px;
     margin-left: 0px;
+    width: 250px;
   }
+}
+
+.footerReveal{
+  position: relative;
+  width: 100vw;
+  height: 800px;
 }
