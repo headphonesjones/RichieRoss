@@ -391,13 +391,13 @@ body {
   position: relative; }
   @media (min-width: 400px) {
     .hero {
-      height: 50vh; } }
+      height: 100vh; } }
   @media (min-width: 415px) {
     .hero {
       height: 100vh; } }
   @media (min-width: 750px) {
     .hero {
-      height: 50vh; } }
+      height: 100vh; } }
   @media (min-width: 1000px) {
     .hero {
       height: 90vh; } }
@@ -406,40 +406,30 @@ body {
     width: 151%;
     height: 100%;
     background-size: contain;
-    position: absolute;
+    position: fixed;
     top: 15%;
-    right: -38%; }
-    @media (min-width: 400px) {
-      .hero .heroImage {
-        width: 100%;
-        right: 0%;
-        top: 0%; } }
+    left: 0%; }
     @media (max-width: 1375px) {
       .hero .heroImage {
         top: 10%; } }
     @media (max-width: 1200px) {
       .hero .heroImage {
         top: 20%; } }
-    @media (max-width: 750px) {
-      .hero .heroImage {
-        width: 100%;
-        top: 54%;
-        right: 5%; } }
     @media (max-width: 550px) {
       .hero .heroImage {
         width: 131%;
         height: 100%;
         background-size: contain;
-        position: absolute;
+        position: fixed;
         top: 26%;
-        right: -15%; } }
+        left: -10%; } }
   .hero .logoContainer {
     background: url(/dist/images/logo_small_short-01.gif) no-repeat;
     width: 55%;
     height: 30%;
     background-size: contain;
     display: block;
-    position: relative;
+    position: fixed;
     z-index: 12;
     left: 54%;
     bottom: 30px;
@@ -458,7 +448,7 @@ body {
     @media (max-width: 550px) {
       .hero .logoContainer {
         left: 44%;
-        bottom: -60px; } }
+        top: 5%; } }
   .hero .heroBlotch {
     width: 100%;
     height: 30%;
@@ -631,6 +621,10 @@ hr {
       .third .columns {
         position: relative;
         top: 50px; } }
+    @media screen and (min-width: 414px) and (max-width: 736px) {
+      .third .columns {
+        position: relative;
+        top: 0px; } }
   .third .smallLogo {
     margin-top: 100px;
     margin-bottom: 0px;
@@ -805,6 +799,11 @@ footer {
     margin-top: 100px;
     margin-left: 0px;
     width: 250px; }
+    @media screen and (min-width: 414px) and (max-width: 736px) {
+      footer .footerLogo {
+        position: absolute;
+        bottom: 0px;
+        right: 0px; } }
 
 .footerReveal {
   position: relative;

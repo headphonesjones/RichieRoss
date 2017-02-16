@@ -48,7 +48,7 @@ body{
   position:relative;
 
   @media (min-width: 400px) {
-    height:50vh;
+    height:100vh;
   }
 
   @media (min-width: 415px) {
@@ -56,7 +56,7 @@ body{
   }
 
   @media (min-width: 750px) {
-    height:50vh;
+    height:100vh;
   }
 
   @media (min-width: 1000px) {
@@ -68,15 +68,11 @@ body{
     width: 151%;
     height: 100%;
     background-size: contain;
-    position: absolute;
+    position: fixed;
     top:15%;
-    right:-38%;
+    left: 0%;
 
-    @media (min-width: 400px) {
-      width:100%;
-      right:0%;
-      top:0%;
-    }
+
 
     @media (max-width: 1375px){
       top: 10%;
@@ -86,20 +82,22 @@ body{
       top: 20%;
     }
 
-    @media (max-width: 750px){
-      width: 100%;
-      top: 54%;
-      right: 5%;
-    }
+
+    //@media (max-width: 750px){
+    //  width: 100%;
+    //  top: 54%;
+    //  right: 5%;
+    //}
 
     @media (max-width: 550px){
       width: 131%;
       height: 100%;
       background-size: contain;
-      position: absolute;
+      position: fixed;
       top: 26%;
-      right: -15%;
+      left: -10%;
     }
+
   }
 
   .logoContainer {
@@ -108,7 +106,7 @@ body{
     height: 30%;
     background-size: contain;
     display: block;
-    position: relative;
+    position: fixed;
     z-index: 12;
     left: 54%;
     bottom: 30px;
@@ -130,7 +128,7 @@ body{
 
     @media (max-width: 550px){
       left: 44%;
-      bottom: -60px;
+      top: 5%;
     }
   }
 
@@ -350,6 +348,11 @@ hr {
     @media (max-width: 550px){
       position: relative;
       top: 50px;
+    }
+
+    @media screen and (min-width: 414px) and (max-width: 736px) {
+      position: relative;
+      top: 0px;
     }
   }
 
@@ -595,6 +598,12 @@ footer {
     margin-top: 100px;
     margin-left: 0px;
     width: 250px;
+
+    @media screen and (min-width: 414px) and (max-width: 736px) {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
   }
 }
 
