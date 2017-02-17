@@ -407,14 +407,20 @@ body {
     height: 88%;
     background-size: contain;
     position: fixed;
-    top: 15%;
+    top: 0%;
     left: 0%; }
     @media (max-width: 1375px) {
       .hero .heroImage {
         top: 0%; } }
     @media (max-width: 1200px) {
       .hero .heroImage {
-        top: 20%; } }
+        top: 0%; } }
+    @media (max-width: 1100px) {
+      .hero .heroImage {
+        top: 0%; } }
+    @media (max-width: 999px) {
+      .hero .heroImage {
+        top: 10%; } }
     @media (max-width: 550px) {
       .hero .heroImage {
         width: 131%;
@@ -452,18 +458,18 @@ body {
   .hero .heroBlotch {
     width: 100%;
     height: 30%;
-    background: url(../images/small-blotch.png) no-repeat;
+    background: url(../images/orange_blob.png) no-repeat;
     position: absolute;
     background-size: contain;
-    left: 85%;
+    right: 0%;
     top: 75%;
     z-index: 10; }
     @media (min-width: 400px) {
       .hero .heroBlotch {
-        background: url(../images/large-blotch-half.png) no-repeat;
+        background: url(../images/orange_blob.png) no-repeat;
         top: 50%;
         height: 70%;
-        left: 65%;
+        left: 70%;
         background-size: contain; } }
     @media (min-width: 550px) {
       .hero .heroBlotch {
@@ -476,37 +482,7 @@ body {
         left: 70%; } }
     @media (max-width: 550px) {
       .hero .heroBlotch {
-        left: 65%; } }
-  .hero .dots {
-    display: none; }
-    @media (min-width: 400px) {
-      .hero .dots {
-        display: block;
-        background: url("/dist/images/dots.png") repeat;
-        display: block;
-        height: 50%;
-        width: 28%;
-        position: absolute;
-        right: 0;
-        z-index: 11;
-        top: 60%; } }
-    @media (min-width: 415px) {
-      .hero .dots {
-        top: 63%; } }
-    @media (min-width: 550px) {
-      .hero .dots {
-        height: 62%;
-        top: 36%; } }
-    @media (min-width: 750px) {
-      .hero .dots {
-        right: -8%; } }
-    @media (min-width: 1200px) {
-      .hero .dots {
-        right: -8%; } }
-    @media (min-width: 1200px) {
-      .hero .dots {
-        top: 26%;
-        height: 61%; } }
+        left: 70%; } }
 
 /* FIRST SECTION */
 .first {
@@ -535,13 +511,6 @@ body {
     @media (min-width: 550px) {
       .first .smallLogo {
         width: 120px; } }
-  .first .grayTopBlotch {
-    background: url("../images/gray-edge-2.png") repeat-x;
-    height: 50px;
-    position: absolute;
-    bottom: -15px;
-    width: 100%;
-    z-index: 10; }
 
 .imageHeadline {
   width: 200px; }
@@ -574,9 +543,9 @@ hr {
   background-color: #e2e1db;
   z-index: 12;
   position: relative;
-  height: 120vh; }
+  top: -30px; }
   .second .grayTopBlotch {
-    background: url("../images/gray-edge-2.png") repeat-x;
+    background: url("../images/new-gray-edge.png") repeat-x;
     height: 50px;
     position: relative;
     top: -49px;
@@ -690,16 +659,18 @@ hr {
   height: 600px;
   position: relative; }
   .thirdReveal .grayTopBlotch {
-    background: url("../images/gray-edge-2bottom.png") repeat-x;
+    background: url("../images/new-gray-edge.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -5px;
-    z-index: 12; }
+    top: -35px;
+    z-index: 12;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .thirdReveal .grayBottomBlotch {
-    background: url("../images/gray-edge-2.png") repeat-x;
+    background: url("../images/new-gray-edge.png") repeat-x;
     height: 50px;
     position: relative;
-    top: 510px;
+    top: 515px;
     z-index: 12; }
 
 /* FOURTH SECTION */
@@ -719,13 +690,15 @@ hr {
   .fourth .imageHeadline {
     margin-bottom: 30px; }
   .fourth .footerTopBlotch {
-    background: url(/dist/images/gray-edge-2bottom.png) repeat-x;
+    background: url(/dist/images/new-gray-edge.png) repeat-x;
     height: 50px;
     position: absolute;
     bottom: -48px;
     z-index: 10;
     width: 100vw;
-    left: 0; }
+    left: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .fourth .logoFg {
     -webkit-transition: opacity 1s ease;
             transition: opacity 1s ease;
