@@ -490,7 +490,16 @@ body {
   background-color: #000000;
   position: relative;
   top: -25px;
-  z-index: 9; }
+  z-index: 9;
+  height: 100vh;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease; }
+  .first.is_stuck {
+    top: -60px !important; }
+  .first.active {
+    background-color: #fc9378; }
+    .first.active .container {
+      opacity: 0; }
   .first .darkTopBlotch {
     background: url("../images/black-edge-top.png") repeat-x;
     height: 50px;
@@ -498,7 +507,10 @@ body {
     top: -49px; }
   .first .container {
     padding-top: 0px;
-    padding-bottom: 80px; }
+    padding-bottom: 80px;
+    opacity: 1;
+    -webkit-transition: all .1s ease;
+            transition: all .1s ease; }
     @media (min-width: 400px) {
       .first .container {
         padding-top: 80px; } }
@@ -543,7 +555,18 @@ hr {
   background-color: #e2e1db;
   z-index: 12;
   position: relative;
-  top: -30px; }
+  /* Landscape 6 */
+  /* Landscape 6+*/ }
+  @media screen and (max-width: 550px) {
+    .second {
+      position: relative;
+      top: -200px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .second {
+      top: 100px; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .second {
+      top: 100px; } }
   .second .grayTopBlotch {
     background: url("../images/new-gray-edge.png") repeat-x;
     height: 50px;
@@ -553,7 +576,7 @@ hr {
   .second .coolGlasses {
     width: 100%;
     padding-top: 80px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     max-width: 750px;
     position: relative;
     left: -30px;
@@ -569,7 +592,6 @@ hr {
         padding-top: 0px; } }
     @media screen and (max-width: 550px) {
       .second .coolGlasses {
-        margin-top: 150px;
         position: relative;
         left: -10px;
         width: 70%; } }
@@ -588,8 +610,7 @@ hr {
   opacity: 0;
   height: 100vh;
   -webkit-transition: all 0s ease;
-          transition: all 0s ease;
-  background-color: #fc9378; }
+          transition: all 0s ease; }
   .third.active {
     opacity: 1;
     z-index: 10; }
@@ -635,29 +656,22 @@ hr {
       .third .source {
         font-size: 15px; } }
 
-.dotsContainer {
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-  height: 400px; }
-  .dotsContainer .dots {
-    display: none; }
-    @media (min-width: 750px) {
-      .dotsContainer .dots {
-        background: url(/dist/images/dots.png);
-        display: block;
-        height: 70%;
-        width: 24.5%;
-        position: absolute;
-        left: 0;
-        z-index: 11;
-        top: 120%; } }
-
 .thirdReveal {
   width: 100%;
   height: 600px;
-  position: relative; }
+  position: relative;
+  top: -370px;
+  /* Landscape 6 */
+  /* Landscape 6+*/ }
+  @media screen and (max-width: 550px) {
+    .thirdReveal {
+      top: -170px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .thirdReveal {
+      top: 130px; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .thirdReveal {
+      top: 130px; } }
   .thirdReveal .grayTopBlotch {
     background: url("../images/new-gray-edge.png") repeat-x;
     height: 50px;
@@ -678,15 +692,21 @@ hr {
   padding-bottom: 80px;
   padding-top: 80px;
   position: relative;
+  top: -360px;
   z-index: 16;
-  background-color: #e2e1db; }
-  @media (min-width: 1025px) {
-    .fourth {
-      position: relative;
-      bottom: -10px; } }
+  background-color: #e2e1db;
+  /* Landscape 6 */
+  /* Landscape 6+*/ }
   @media screen and (max-width: 550px) {
     .fourth {
-      padding-left: 50px; } }
+      padding-left: 50px;
+      top: -160px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .fourth {
+      top: 130px; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .fourth {
+      top: 140px; } }
   .fourth .imageHeadline {
     margin-bottom: 30px; }
   .fourth .footerTopBlotch {
@@ -779,13 +799,26 @@ footer {
           transition: all 0s ease;
   bottom: 0;
   left: 0;
-  width: 100vw; }
+  width: 100vw;
+  height: 100vh; }
   @media screen and (max-width: 550px) {
-    footer {
-      height: 100vh; }
+    footer .row {
+      position: relative;
+      top: 200px; } }
+  footer .row {
+    position: relative;
+    top: 200px;
+    /* Landscape 6 */
+    /* Landscape 6+ */ }
+    @media screen and (max-width: 550px) {
       footer .row {
-        position: relative;
-        top: 200px; } }
+        top: 100px; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      footer .row {
+        top: 100px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      footer .row {
+        top: 100px; } }
   footer.active {
     opacity: 1; }
   footer .container {

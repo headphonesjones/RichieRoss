@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ea41c7-49bc-4091-9f34-072f011356da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/new-gray-edge.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/orange_blob.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/main.js" afterPath="$PROJECT_DIR$/dist/scripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scripts/main.min.js" afterPath="$PROJECT_DIR$/dist/scripts/main.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/screen.css" afterPath="$PROJECT_DIR$/dist/styles/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/screen.min.css" afterPath="$PROJECT_DIR$/dist/styles/screen.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/main.js" afterPath="$PROJECT_DIR$/src/scripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/base/_global.scss" afterPath="$PROJECT_DIR$/src/styles/base/_global.scss" />
     </list>
     <ignored path="site.iws" />
@@ -33,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="42" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="255">
+              <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -43,8 +45,8 @@
       <file leaf-file-name="_global.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/base/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="319" column="2" lean-forward="false" selection-start-line="319" selection-start-column="2" selection-end-line="322" selection-end-column="3" />
+            <state relative-caret-position="504">
+              <caret line="432" column="5" lean-forward="true" selection-start-line="432" selection-start-column="5" selection-end-line="432" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -53,8 +55,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="117" column="42" lean-forward="true" selection-start-line="117" selection-start-column="42" selection-end-line="117" selection-end-column="42" />
+            <state relative-caret-position="494">
+              <caret line="99" column="32" lean-forward="false" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -88,6 +90,9 @@
       <find>cool</find>
       <find>footer</find>
       <find>coolGlasses</find>
+      <find>secon</find>
+      <find>coolG</find>
+      <find>-30px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,7 +136,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1294" />
+    <option name="width" value="1253" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
@@ -341,7 +346,7 @@
       <workItem from="1487016344124" duration="1550000" />
       <workItem from="1487187031398" duration="2943000" />
       <workItem from="1487269420606" duration="4477000" />
-      <workItem from="1487351532816" duration="6627000" />
+      <workItem from="1487351532816" duration="11391000" />
     </task>
     <task id="LOCAL-00001" summary="V3 start. Only main thing left for desktop is the footer.">
       <created>1486587247104</created>
@@ -399,11 +404,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487354915240</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Latest round of edits">
+      <created>1487369446147</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1487369446147</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74142000" />
+    <option name="totallyTimeSpent" value="78906000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -415,11 +427,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1253" height="1407" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17071198" sideWeight="0.5099432" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21752739" sideWeight="0.4900568" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22473727" sideWeight="0.4900568" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -487,7 +499,8 @@
     <MESSAGE value="Mobile edits and fixed richie image effect added" />
     <MESSAGE value="mobile footer fixes, cool glasses mobile fixes" />
     <MESSAGE value="More fixes to how scroll operates for mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="More fixes to how scroll operates for mobile" />
+    <MESSAGE value="Latest round of edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Latest round of edits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -803,24 +816,24 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-3/footer.php" />
     <entry file="file://$PROJECT_DIR$/src/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="117" column="42" lean-forward="true" selection-start-line="117" selection-start-column="42" selection-end-line="117" selection-end-column="42" />
+        <state relative-caret-position="494">
+          <caret line="99" column="32" lean-forward="false" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="42" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="255">
+          <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/base/_global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="319" column="2" lean-forward="false" selection-start-line="319" selection-start-column="2" selection-end-line="322" selection-end-column="3" />
+        <state relative-caret-position="504">
+          <caret line="432" column="5" lean-forward="true" selection-start-line="432" selection-start-column="5" selection-end-line="432" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -97,7 +97,7 @@ var scroll = function () {
     var scrollPos = $(document).scrollTop();
     var startGif = $(".coolGlasses").offset().top;
     var swapSections = $(".second").offset().top;
-    var swapFooter = $(".fourth .twelve").offset().top;
+    var swapFooter = $("#trigger").offset().top;
 
     if(waitToPlayGif && scrollPos > startGif - 100){
         waitToPlayGif = false;
@@ -107,11 +107,13 @@ var scroll = function () {
     }
     else if(scrollPos > swapSections){
         $(".third").addClass("active");
+        $(".first").addClass("active");
         // $(".first").css("display", "none");
         $(".fixedFooter").removeClass("active");
     }
     else{
         $(".third").removeClass("active");
+        $(".first").removeClass("active");
         // $(".first").css("display", "block");
     }
     if (scrollPos > swapFooter){
