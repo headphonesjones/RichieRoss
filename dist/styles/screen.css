@@ -403,15 +403,15 @@ body {
       height: 90vh; } }
   .hero .heroImage {
     background: url("/dist/images/Richie.png") no-repeat;
-    width: 151%;
-    height: 100%;
+    width: 145%;
+    height: 88%;
     background-size: contain;
     position: fixed;
     top: 15%;
     left: 0%; }
     @media (max-width: 1375px) {
       .hero .heroImage {
-        top: 10%; } }
+        top: 0%; } }
     @media (max-width: 1200px) {
       .hero .heroImage {
         top: 20%; } }
@@ -526,6 +526,22 @@ body {
     @media (min-width: 400px) {
       .first .container {
         padding-top: 80px; } }
+  .first .smallLogo {
+    width: 80px;
+    margin-top: 12px; }
+    @media (min-width: 400px) {
+      .first .smallLogo {
+        width: 80px; } }
+    @media (min-width: 550px) {
+      .first .smallLogo {
+        width: 120px; } }
+  .first .grayTopBlotch {
+    background: url("../images/gray-edge-2.png") repeat-x;
+    height: 50px;
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    z-index: 10; }
 
 .imageHeadline {
   width: 200px; }
@@ -556,7 +572,7 @@ hr {
 .second {
   text-align: center;
   background-color: #e2e1db;
-  z-index: 10;
+  z-index: 12;
   position: relative;
   height: 120%; }
   @media screen and (max-width: 550px) {
@@ -572,7 +588,7 @@ hr {
     width: 100%;
     padding-top: 80px;
     padding-bottom: 150px;
-    max-width: 960px;
+    max-width: 750px;
     position: relative;
     left: -30px;
     opacity: 1;
@@ -580,23 +596,33 @@ hr {
             transition: opacity 1s ease; }
     .second .coolGlasses.hide {
       opacity: 0; }
+    @media screen and (min-width: 414px) and (max-width: 736px) {
+      .second .coolGlasses {
+        width: 60%;
+        left: -10px; } }
     @media screen and (max-width: 550px) {
       .second .coolGlasses {
         margin-top: 50px;
+        position: relative;
+        left: -10px;
+        width: 70%; } }
+    @media screen and (max-width: 375px) {
+      .second .coolGlasses {
+        width: 55%;
         position: relative;
         left: -10px; } }
 
 /* THIRD SECTION */
 .third {
-  background-color: #fc9378;
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 9;
+  z-index: 11;
   opacity: 0;
   height: 100vh;
   -webkit-transition: all 0s ease;
-          transition: all 0s ease; }
+          transition: all 0s ease;
+  background-color: #fc9378; }
   .third.active {
     opacity: 1; }
   @media (min-width: 667px) {
@@ -668,14 +694,14 @@ hr {
     background: url("../images/gray-edge-2bottom.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -2px;
-    z-index: 10; }
+    top: -5px;
+    z-index: 12; }
   .thirdReveal .grayBottomBlotch {
     background: url("../images/gray-edge-2.png") repeat-x;
     height: 50px;
     position: relative;
-    top: 512px;
-    z-index: 10; }
+    top: 510px;
+    z-index: 12; }
 
 /* FOURTH SECTION */
 .fourth {
@@ -760,9 +786,14 @@ hr {
     border-color: #000000; }
   .fourth p {
     color: #000000;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 26px; }
   .fourth .last {
-    margin-top: 24px; }
+    margin-top: 24px;
+    width: 350px; }
+    @media screen and (max-width: 550px) {
+      .fourth .last {
+        width: 250px; } }
 
 footer {
   background: #000000;
@@ -777,17 +808,27 @@ footer {
   bottom: 0;
   left: 0;
   width: 100vw; }
+  @media screen and (max-width: 550px) {
+    footer {
+      height: 100vh; }
+      footer .row {
+        position: relative;
+        top: 200px; } }
   footer.active {
     opacity: 1; }
   footer .container {
     display: block;
     margin-top: 20px; }
   footer p {
-    color: #e2e1db;
+    color: #b3a99f;
     width: 100%;
     margin-bottom: 0px;
     top: 10px;
-    position: relative; }
+    position: relative;
+    line-height: 28px; }
+  footer .contactRichie {
+    position: relative;
+    top: 8px; }
   footer a {
     font-size: 20px;
     color: #e2e1db;
@@ -796,16 +837,19 @@ footer {
       color: #fc9378; }
   footer .footerLogo {
     display: block;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 0px;
-    width: 250px; }
-    @media screen and (min-width: 414px) and (max-width: 736px) {
+    width: 200px;
+    position: relative;
+    left: -20px; }
+    @media screen and (min-width: 420px) and (max-width: 736px) {
       footer .footerLogo {
         position: absolute;
         bottom: 0px;
-        right: 0px; } }
+        right: 0px;
+        left: 60%; } }
 
 .footerReveal {
   position: relative;
   width: 100vw;
-  height: 800px; }
+  height: 740px; }

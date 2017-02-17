@@ -65,8 +65,8 @@ body{
 
   .heroImage {
     background: url("/dist/images/Richie.png") no-repeat;
-    width: 151%;
-    height: 100%;
+    width: 145%;
+    height: 88%;
     background-size: contain;
     position: fixed;
     top:15%;
@@ -75,7 +75,7 @@ body{
 
 
     @media (max-width: 1375px){
-      top: 10%;
+      top: 0%;
     }
 
     @media (max-width: 1200px){
@@ -229,6 +229,29 @@ body{
       padding-top:80px;
     }
   }
+
+  .smallLogo{
+    width: 80px;
+    margin-top: 12px;
+
+    @media (min-width: 400px) {
+      width:80px;
+    }
+
+    @media (min-width: 550px) {
+      width:120px;
+    }
+  }
+
+  .grayTopBlotch{
+    background: url("../images/gray-edge-2.png") repeat-x;
+    height: 50px;
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    z-index:10;
+
+  }
 }
 
 .imageHeadline {
@@ -268,7 +291,7 @@ hr {
 .second {
   text-align:center;
   background-color:$lightGray;
-  z-index:10;
+  z-index:12;
   position:relative;
   height: 120%;
 
@@ -289,7 +312,7 @@ hr {
     width:100%;
     padding-top:80px;
     padding-bottom:150px;
-    max-width:960px;
+    max-width:750px;
     position: relative;
     left: -30px;
     opacity:1;
@@ -299,8 +322,20 @@ hr {
       opacity:0;
     }
 
+    @media screen and (min-width: 414px) and (max-width: 736px) {
+      width: 60%;
+      left: -10px;
+    }
+
     @media screen and (max-width: 550px){
       margin-top:50px;
+      position: relative;
+      left: -10px;
+      width: 70%;
+    }
+
+    @media screen and (max-width: 375px){
+      width: 55%;
       position: relative;
       left: -10px;
     }
@@ -310,14 +345,14 @@ hr {
 /* THIRD SECTION */
 
 .third {
-  background-color: $blotchColor;
   width: 100%;
   position: fixed;
   top: 0;
-  z-index:9;
+  z-index:11;
   opacity: 0;
   height: 100vh;
   transition: all 0s ease;
+  background-color: $blotchColor;
 
   &.active{
     opacity: 1;
@@ -413,15 +448,15 @@ hr {
     background: url("../images/gray-edge-2bottom.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -2px;
-    z-index:10;
+    top: -5px;
+    z-index:12;
   }
   .grayBottomBlotch{
     background: url("../images/gray-edge-2.png") repeat-x;
     height: 50px;
     position: relative;
-    top: 512px;
-    z-index:10;
+    top: 510px;
+    z-index:12;
   }
 }
 
@@ -535,10 +570,16 @@ hr {
   p {
     color:$black;
     margin-bottom:20px;
+    line-height: 26px;
   }
 
   .last {
     margin-top:24px;
+    width: 350px;
+
+    @media screen and (max-width: 550px){
+      width: 250px;
+    }
   }
 
 }
@@ -556,6 +597,15 @@ footer {
   bottom: 0;
   left: 0;
   width: 100vw;
+
+  @media screen and (max-width: 550px){
+    height: 100vh;
+
+    .row{
+      position: relative;
+      top: 200px;
+    }
+  }
 
   &.active{
     opacity: 1;
@@ -575,12 +625,18 @@ footer {
   //}
 
   p {
-    color:$lightGray;
+    color:#b3a99f;
     width:100%;
     margin-bottom:0px;
     top: 10px;
     position: relative;
+    line-height: 28px;
 
+  }
+
+  .contactRichie{
+    position: relative;
+    top: 8px;
   }
 
   a{
@@ -595,14 +651,17 @@ footer {
 
   .footerLogo{
     display: block;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 0px;
-    width: 250px;
+    width: 200px;
+    position: relative;
+    left: -20px;
 
-    @media screen and (min-width: 414px) and (max-width: 736px) {
+    @media screen and (min-width: 420px) and (max-width: 736px) {
       position: absolute;
       bottom: 0px;
       right: 0px;
+      left: 60%;
     }
   }
 }
@@ -610,5 +669,5 @@ footer {
 .footerReveal{
   position: relative;
   width: 100vw;
-  height: 800px;
+  height: 740px;
 }

@@ -23,6 +23,8 @@ var isMobile = {
     }
 };
 $(".first").stick_in_parent();
+
+
 $(document).ready(function(){
     if( !isMobile.any() ){
         $(window).stellar();
