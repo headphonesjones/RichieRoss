@@ -574,10 +574,7 @@ hr {
   background-color: #e2e1db;
   z-index: 12;
   position: relative;
-  height: 120%; }
-  @media screen and (max-width: 550px) {
-    .second {
-      height: 130%; } }
+  height: 120vh; }
   .second .grayTopBlotch {
     background: url("../images/gray-edge-2.png") repeat-x;
     height: 50px;
@@ -596,13 +593,14 @@ hr {
             transition: opacity 1s ease; }
     .second .coolGlasses.hide {
       opacity: 0; }
-    @media screen and (min-width: 414px) and (max-width: 736px) {
+    @media screen and (min-width: 415px) and (max-width: 736px) {
       .second .coolGlasses {
         width: 60%;
-        left: -10px; } }
+        left: -10px;
+        padding-top: 0px; } }
     @media screen and (max-width: 550px) {
       .second .coolGlasses {
-        margin-top: 50px;
+        margin-top: 150px;
         position: relative;
         left: -10px;
         width: 70%; } }
@@ -617,14 +615,15 @@ hr {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 11;
+  z-index: 8;
   opacity: 0;
   height: 100vh;
   -webkit-transition: all 0s ease;
           transition: all 0s ease;
   background-color: #fc9378; }
   .third.active {
-    opacity: 1; }
+    opacity: 1;
+    z-index: 10; }
   @media (min-width: 667px) {
     .third {
       background-size: contain;
@@ -646,8 +645,8 @@ hr {
     @media (max-width: 550px) {
       .third .columns {
         position: relative;
-        top: 50px; } }
-    @media screen and (min-width: 414px) and (max-width: 736px) {
+        top: 150px; } }
+    @media screen and (min-width: 415px) and (max-width: 736px) {
       .third .columns {
         position: relative;
         top: 0px; } }

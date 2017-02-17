@@ -67,6 +67,19 @@ $(document).ready(function(){
 var waiting = false;
 var waitToPlayGif = true;
 
+document.body.addEventListener('touchmove', function() {
+    if (waiting) {
+        return;
+    }
+    waiting = true;
+
+    scroll();
+
+    setTimeout(function () {
+        waiting = false;
+    }, 200);
+});
+
 $(window).scroll(function () {
     if (waiting) {
         return;
