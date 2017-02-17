@@ -660,7 +660,7 @@ hr {
   width: 100%;
   height: 600px;
   position: relative;
-  top: -370px;
+  top: 30px;
   /* Landscape 6 */
   /* Landscape 6+*/ }
   @media screen and (max-width: 550px) {
@@ -692,7 +692,7 @@ hr {
   padding-bottom: 80px;
   padding-top: 80px;
   position: relative;
-  top: -360px;
+  top: 40px;
   z-index: 16;
   background-color: #e2e1db;
   /* Landscape 6 */
