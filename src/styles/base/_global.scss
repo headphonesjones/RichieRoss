@@ -64,7 +64,7 @@ body{
   }
 
   .heroImage {
-    background: url("/dist/images/Richie.png") no-repeat;
+    background: url("/dist/images/Richie-new.png") no-repeat;
     width: 145%;
     height: 88%;
     background-size: contain;
@@ -182,7 +182,7 @@ body{
   transition: all .5s ease;
 
   &.is_stuck{
-    top: -60px !important;
+    top: -40px !important;
   }
 
 
@@ -232,7 +232,7 @@ body{
   width: 200px;
 
   @media (min-width: 550px) {
-    width:250px;
+    width:280px;
   }
 }
 
@@ -329,6 +329,8 @@ hr {
       position: relative;
       left: -10px;
       width: 70%;
+      padding-top: 160px;
+      padding-bottom: 160px;
     }
 
     @media screen and (max-width: 375px){
@@ -349,7 +351,6 @@ hr {
   opacity: 0;
   height: 100vh;
   transition: all 0s ease;
-  //background-color: $blotchColor;
 
   &.active{
     opacity: 1;
@@ -367,6 +368,23 @@ hr {
     padding-bottom:360px;
   }
 
+  .imageHeadline{
+    margin-top: 50px;
+
+    @media (max-width: 550px){
+      margin-top: 30px;
+    }
+
+    /* Landscape 6 */
+    @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      margin-top: 15px;
+    }
+  }
+
   .columns {
     display:block !important;
     opacity:1;
@@ -380,7 +398,7 @@ hr {
 
     @media (max-width: 550px){
       position: relative;
-      top: 150px;
+      top: 100px;
     }
 
     @media screen and (min-width: 415px) and (max-width: 736px) {
@@ -421,7 +439,7 @@ hr {
   top: 30px;
 
   @media screen and (max-width: 550px){
-    top: -170px;
+    top: -173px;
   }
 
   ///* Landscape Pixel */
@@ -438,7 +456,7 @@ hr {
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-    top: 130px;
+    top: 116px;
   }
 
 
@@ -456,7 +474,7 @@ hr {
     background: url("../images/new-gray-edge.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -35px;
+    top: -32px;
     z-index:12;
     transform: rotate(180deg);
   }
@@ -466,6 +484,26 @@ hr {
     position: relative;
     top: 515px;
     z-index:12;
+
+    /* Landscape 6 */
+    @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      top: 427px;
+    }
+
+    /* Landscape 6+ */
+    @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) {
+      top: 413px;
+    }
+
+
   }
 }
 
@@ -486,22 +524,22 @@ hr {
   }
 
   /* Landscape 6 */
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    top: 130px;
-  }
-
-  /* Landscape 6+*/
-  @media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-    top: 140px;
-  }
+  //@media only screen
+  //and (min-device-width: 375px)
+  //and (max-device-width: 667px)
+  //and (-webkit-min-device-pixel-ratio: 2)
+  //and (orientation: landscape) {
+  //  top: 130px;
+  //}
+  //
+  ///* Landscape 6+*/
+  //@media only screen
+  //and (min-device-width: 414px)
+  //and (max-device-width: 736px)
+  //and (-webkit-min-device-pixel-ratio: 3)
+  //and (orientation: landscape) {
+  //  top: 140px;
+  //}
 
   .imageHeadline{
     margin-bottom: 30px;
@@ -722,5 +760,5 @@ footer {
 .footerReveal{
   position: relative;
   width: 100vw;
-  height: 740px;
+  height: 100vh;
 }

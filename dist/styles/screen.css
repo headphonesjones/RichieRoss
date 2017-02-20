@@ -402,7 +402,7 @@ body {
     .hero {
       height: 90vh; } }
   .hero .heroImage {
-    background: url("/dist/images/Richie.png") no-repeat;
+    background: url("/dist/images/Richie-new.png") no-repeat;
     width: 145%;
     height: 88%;
     background-size: contain;
@@ -495,7 +495,7 @@ body {
   -webkit-transition: all .5s ease;
           transition: all .5s ease; }
   .first.is_stuck {
-    top: -60px !important; }
+    top: -40px !important; }
   .first.active {
     background-color: #fc9378; }
     .first.active .container {
@@ -528,7 +528,7 @@ body {
   width: 200px; }
   @media (min-width: 550px) {
     .imageHeadline {
-      width: 250px; } }
+      width: 280px; } }
 
 hr {
   height: 1px;
@@ -594,7 +594,9 @@ hr {
       .second .coolGlasses {
         position: relative;
         left: -10px;
-        width: 70%; } }
+        width: 70%;
+        padding-top: 160px;
+        padding-bottom: 160px; } }
     @media screen and (max-width: 375px) {
       .second .coolGlasses {
         width: 55%;
@@ -623,6 +625,15 @@ hr {
   @media (min-width: 1200px) {
     .third {
       padding-bottom: 360px; } }
+  .third .imageHeadline {
+    margin-top: 50px;
+    /* Landscape 6 */ }
+    @media (max-width: 550px) {
+      .third .imageHeadline {
+        margin-top: 30px; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .third .imageHeadline {
+        margin-top: 15px; } }
   .third .columns {
     display: block !important;
     opacity: 1;
@@ -635,7 +646,7 @@ hr {
     @media (max-width: 550px) {
       .third .columns {
         position: relative;
-        top: 150px; } }
+        top: 100px; } }
     @media screen and (min-width: 415px) and (max-width: 736px) {
       .third .columns {
         position: relative;
@@ -665,10 +676,10 @@ hr {
   /* Landscape 6+*/ }
   @media screen and (max-width: 550px) {
     .thirdReveal {
-      top: -170px; } }
+      top: -173px; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .thirdReveal {
-      top: 130px; } }
+      top: 116px; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .thirdReveal {
       top: 130px; } }
@@ -676,7 +687,7 @@ hr {
     background: url("../images/new-gray-edge.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -35px;
+    top: -32px;
     z-index: 12;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
@@ -685,7 +696,15 @@ hr {
     height: 50px;
     position: relative;
     top: 515px;
-    z-index: 12; }
+    z-index: 12;
+    /* Landscape 6 */
+    /* Landscape 6+ */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .thirdReveal .grayBottomBlotch {
+        top: 427px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      .thirdReveal .grayBottomBlotch {
+        top: 413px; } }
 
 /* FOURTH SECTION */
 .fourth {
@@ -695,18 +714,11 @@ hr {
   top: 40px;
   z-index: 16;
   background-color: #e2e1db;
-  /* Landscape 6 */
-  /* Landscape 6+*/ }
+  /* Landscape 6 */ }
   @media screen and (max-width: 550px) {
     .fourth {
       padding-left: 50px;
       top: -160px; } }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .fourth {
-      top: 130px; } }
-  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-    .fourth {
-      top: 140px; } }
   .fourth .imageHeadline {
     margin-bottom: 30px; }
   .fourth .footerTopBlotch {
@@ -857,4 +869,4 @@ footer {
 .footerReveal {
   position: relative;
   width: 100vw;
-  height: 740px; }
+  height: 100vh; }
