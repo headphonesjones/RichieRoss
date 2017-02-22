@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ea41c7-49bc-4091-9f34-072f011356da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/frames.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/approach.png" afterPath="$PROJECT_DIR$/dist/images/approach.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/images/Richie-new.png" afterPath="$PROJECT_DIR$/dist/images/Richie-new.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/screen.css" afterPath="$PROJECT_DIR$/dist/styles/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/screen.min.css" afterPath="$PROJECT_DIR$/dist/styles/screen.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/base/_global.scss" afterPath="$PROJECT_DIR$/src/styles/base/_global.scss" />
     </list>
     <ignored path="site.iws" />
@@ -31,7 +29,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -41,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_global.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_global.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/base/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5647">
-              <caret line="531" column="11" lean-forward="false" selection-start-line="531" selection-start-column="11" selection-end-line="531" selection-end-column="11" />
+            <state relative-caret-position="442">
+              <caret line="219" column="15" lean-forward="false" selection-start-line="219" selection-start-column="15" selection-end-line="219" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -115,8 +113,8 @@
         <option value="$PROJECT_DIR$/src/styles/base/_variables.scss" />
         <option value="$PROJECT_DIR$/dist/scripts/main.js" />
         <option value="$PROJECT_DIR$/src/scripts/main.js" />
-        <option value="$PROJECT_DIR$/src/styles/base/_global.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/styles/base/_global.scss" />
       </list>
     </option>
   </component>
@@ -139,7 +137,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1166" />
+    <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
@@ -157,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,7 +224,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -353,7 +351,9 @@
       <workItem from="1487481140374" duration="84000" />
       <workItem from="1487609326811" duration="1817000" />
       <workItem from="1487611159134" duration="138000" />
-      <workItem from="1487703307191" duration="949000" />
+      <workItem from="1487703307191" duration="973000" />
+      <workItem from="1487706187477" duration="900000" />
+      <workItem from="1487785155007" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="V3 start. Only main thing left for desktop is the footer.">
       <created>1486587247104</created>
@@ -439,11 +439,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487611243636</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Hopefully final changes before going live">
+      <created>1487704270811</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1487704270811</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82835000" />
+    <option name="totallyTimeSpent" value="83961000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -455,11 +462,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1166" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17071198" sideWeight="0.5099432" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24173912" sideWeight="0.4900568" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21752739" sideWeight="0.4900568" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -530,7 +537,8 @@
     <MESSAGE value="Latest round of edits" />
     <MESSAGE value="More edits and mobile fixes. new solution to swapping fixed areas, not too happy with it just yet." />
     <MESSAGE value="More fun changes, yay" />
-    <option name="LAST_COMMIT_MESSAGE" value="More fun changes, yay" />
+    <MESSAGE value="Hopefully final changes before going live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hopefully final changes before going live" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -882,18 +890,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/base/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5647">
-          <caret line="531" column="11" lean-forward="false" selection-start-line="531" selection-start-column="11" selection-end-line="531" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="78" lean-forward="false" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/base/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="219" column="15" lean-forward="false" selection-start-line="219" selection-start-column="15" selection-end-line="219" selection-end-column="15" />
           <folding />
         </state>
       </provider>
