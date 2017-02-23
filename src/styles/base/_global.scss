@@ -64,7 +64,7 @@ body{
   }
 
   .heroImage {
-    background: url("/dist/images/Richie-new.png") no-repeat;
+    background: url("/dist/images/Richie-new1.png") no-repeat;
     width: 145%;
     height: 88%;
     background-size: contain;
@@ -216,8 +216,8 @@ body{
   .imageHeadline {
     width: 350px;
 
-    @media (min-width: 550px) {
-      width:325px;
+    @media (max-width: 550px) {
+      width:250px;
     }
   }
 
@@ -239,7 +239,7 @@ body{
 .imageHeadline {
   width: 300px;
 
-  @media (min-width: 550px) {
+  @media (max-width: 550px) {
     width:250px;
   }
 }

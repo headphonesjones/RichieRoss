@@ -402,7 +402,7 @@ body {
     .hero {
       height: 90vh; } }
   .hero .heroImage {
-    background: url("/dist/images/Richie-new.png") no-repeat;
+    background: url("/dist/images/Richie-new1.png") no-repeat;
     width: 145%;
     height: 88%;
     background-size: contain;
@@ -516,9 +516,9 @@ body {
         padding-top: 80px; } }
   .first .imageHeadline {
     width: 350px; }
-    @media (min-width: 550px) {
+    @media (max-width: 550px) {
       .first .imageHeadline {
-        width: 325px; } }
+        width: 250px; } }
   .first .smallLogo {
     width: 80px;
     margin-top: 12px; }
@@ -531,7 +531,7 @@ body {
 
 .imageHeadline {
   width: 300px; }
-  @media (min-width: 550px) {
+  @media (max-width: 550px) {
     .imageHeadline {
       width: 250px; } }
 
