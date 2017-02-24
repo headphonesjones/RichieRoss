@@ -806,7 +806,8 @@ hr {
     margin-bottom: 20px;
     line-height: 26px; }
   .fourth .last {
-    margin-top: 24px;
+    position: relative;
+    top: -20px;
     width: 350px; }
     @media screen and (max-width: 550px) {
       .fourth .last {
